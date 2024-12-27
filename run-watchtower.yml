@@ -1,5 +1,5 @@
 - name: Run watchtower
-  hosts: all
+  hosts: dev
   tasks:
     - name: Execute an inline Bash script
       shell: |
