@@ -1,0 +1,8 @@
+- name: Run watchtower
+  hosts: all
+  tasks:
+    - name: Execute an inline Bash script
+      shell: |
+        #!/bin/bash
+        cd /projects/docker-watchtower
+        docker compose  -f watchtower-compose.yml up --pull always
